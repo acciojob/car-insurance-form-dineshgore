@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+  <head>
+    <title>car insurance registration</title>
+    </head>
+  <body>
+    <h1>car insurance registraion</title>
+    <h1>car insurance registration form</h1>
+    <form action="submit_car_insurance.php"method="POST">
+      <div>
+        <label for="name">name:</label>
+        <input type="text" id="name"
+               name="name" required>
+      </div>
+      <div>
+        <label>gender:</label>
+        <input type="radio" id="male"
+               name="gender" value="male" required>
+        <label for="male">male</label>
+        <input type="radio" id="female"
+               name="gender" value="female" required>
+        <label for="female">female</label>
+      </div>
+      <div>
+        <label for="cars">car brands:
+        </label>
+        <select id="cars" name="cars">
+          <option
+                  value="BMW">BMW</option>
+          <option
+                  value="BMW">BMW</option>
+          <option
+                  value="BMW">BMW</option>
+                              <option
+                                      value="mercedes">mercedes</option>
+        </select>
+      </div>
+      <div>
+        <label for="carage">car age:
+        </label>
+        <input type="date" id="dop"
+               name="dop" required>
+      </div>
+      <div>
+        <label for="password">password:
+        </label>
+        <input type="password"
+               id="password" name="password" required>
+      </div>
+      <div>
+        <button
+                type="submit">submit</button>
+      </div>
+    </form>
+  </body>
 </html>
